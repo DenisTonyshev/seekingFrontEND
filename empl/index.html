@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--ma ze-->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/mystyles.css">
+    <title>Employees</title>
+</head>
+<body>
+<header>
+    <h5 class="card-title">User Accounts</h5>
+    <button data-login-button ="logIn" class="btn-light" id="logInBtn">LOG IN</button>
+    <button data-logout-button ="logOut" class="btn-light" id="logOutBtn">LOG OUT</button>
+</header>
+<div class="main_container">
+    <div class="right_side">
+        <div class="table_employees">
+            <table class="table table-hover" id="table">
+                <thead>
+                <tr>
+                    <th class="one">id</th>
+                    <th class="two">name</th>
+                    <th class="tre">groupName</th>
+                    <th class="for">numberOfFollowers</th>
+                    <th class="fif">FOLLOW/UNFOLLOW</th>
+                </tr>
+
+                </thead>
+                <tbody data-empl-role="table_body" id = "tableBody">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="getAllButton">
+            <button type="reset" class="btn btn-outline-secondary" hidden>Reset</button>
+        </div>
+
+    </div>
+</div>
+
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/user.js"></script>
+<script src="scripts/moteServer.js"></script>
+<script src="scripts/tabler.js"></script>
+<script src="scripts/userLogin.js"></script>
+<script src="scripts/userlogout.js"></script>
+<script src="scripts/buttonHandler.js"></script>
+<script src="scripts/Main.js"></script>
+
+</body>
+</html>
+
+
